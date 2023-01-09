@@ -1,1 +1,0 @@
-# Katherine-Panoras-Growth-Portfolio
