@@ -1,0 +1,106 @@
+body {
+    background-color:pink;  
+}
+p {
+	font-family: 'News Cycle', sans-serif;
+}
+.header, button {
+	font-family: 'Ubuntu', sans-serif; 
+}
+
+.header {
+    display:flex;
+    justify-content:center;
+}
+
+.aboutMe {
+	
+}
+
+.project1 , .project2 , .project3 {
+	display:inline-block;
+    text-align:center;
+    margin: 20px;
+    padding: 20px;
+}
+.proj123{
+    display:flex;
+    justify-content:center;
+}
+
+.myEmail, .myLoco , .exp {
+  display:inline-block;
+  text-align:center;
+  margin:10px;
+  padding:10px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+    
+.contactInfo {
+    display:flex;
+    justify-content:space-around;
+}
+
+
+
+/*buttons*/
+
+.allProjs, .personalInfo, .contacts {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #CF9FFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.allProjs:active, .personalInfo:active, .contacts:active {
+    background-color: #5D3FD3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.pbutton1, .pbutton2, .pbutton3 {
+  position: relative;
+  background-color: #CF9FFF;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pbutton1:after, .pbutton2:after, .pbutton3:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.pbutton1:active:after, .pbutton2:active:after, .pbutton3:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
