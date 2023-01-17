@@ -14,8 +14,23 @@ p {
 }
 
 .aboutMe {
-	
+	display:inline-block;
+    text-align:center;
+    margin: 20px;
+    padding: 20px;
 }
+
+img {
+    width:200px;
+    border:solid black 1px;
+}
+
+
+
+
+
+
+
 
 .project1 , .project2 , .project3 {
 	display:inline-block;
@@ -38,11 +53,14 @@ p {
 .navBar{
     display: flex;
     justify-content: space-evenly;
+    margin-right: auto;
+	margin-left: auto;
+	width: 1000px;
 }
     
 .contactInfo {
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
 }
 
 
@@ -62,13 +80,18 @@ p {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    transition: 1s;
 }
+
+.allProjs:hover, .personalInfo:hover, .contacts:hover{
+    transform: scale(1.1);
+}
+
 .allProjs:active, .personalInfo:active, .contacts:active {
     background-color: #5D3FD3;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
 
 .pbutton1, .pbutton2, .pbutton3 {
   position: relative;
