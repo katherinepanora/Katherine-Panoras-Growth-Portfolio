@@ -25,12 +25,10 @@ img {
     border:solid black 1px;
 }
 
-
-
-
-
-
-
+.contactMe {
+    margin:20px;
+    padding:20px;
+}
 
 .project1 , .project2 , .project3 {
 	display:inline-block;
