@@ -1,5 +1,5 @@
 <!DOCTYPE html> <html><head>
-        <title>Katherine Panora's Growth Portfolio</title>
+        <title>KP Growth Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=News+Cycle&amp;display=swap" rel="stylesheet">
 	<script>function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -4070,12 +4070,10 @@ img {
     border:solid black 1px;
 }
 
-
-
-
-
-
-
+.contactMe {
+    margin:20px;
+    padding:20px;
+}
 
 .project1 , .project2 , .project3 {
 	display:inline-block;
@@ -4179,14 +4177,14 @@ img {
         </div>
       
         <div class="navBar">
-            <button class="allProjs">Projects</button>
             <button class="personalInfo">About Me</button>
+            <button class="allProjs">Projects</button>
             <button class="contacts">Contacts</button>
         </div>
     
         <div class="aboutMe">
             <h2>About Me:</h2>
-            <p>My name is Katherine Panora, and this is my growth portfolio! Throughout highschool I have been learning coding, ranging from using resources like replit, python, popcode, to github. </p>
+            <p>My name is Katherine Panora, and this is my growth portfolio! Throughout highschool I have been learning coding, ranging from using resources like replit, python, popcode, and github. I'm looking foward into attending college and going forth with computer science!</p>
         </div>
     
         <div class="proj123">  
@@ -4195,8 +4193,8 @@ img {
             <button class="pbutton1">Open #1</button>
             <div class="project1open">
               <p><img src="https://i.ibb.co/sb6jWf3/Screenshot-2023-01-09-192538.png"></p>
-              <a href="https://popcode.org/?snapshot=412b0c33-c901-45ab-9ffd-c48b934f185b" target="blank_">Hire Me Profile</a>
-              <p>This was one of my very first somewhat big projects. We basically worked in a partnership and </p>
+              <a href="https://katherinepanora.github.io/Hire-Me-Profile" target="blank_">Hire Me Profile</a>
+              <p>This was one of my very first projects, and it was intended so people worked in duos and got to know their new partner. I got to  meet someone new and learn more about them which was a new experience to me.</p>
             </div>
            </div>
            <div class="project2">
@@ -4204,8 +4202,8 @@ img {
             <button class="pbutton2">Open #2</button>
             <div class="project2open">
                 <p><img src="https://i.ibb.co/hF32HGw/Screen-Shot-2023-01-17-at-12-12-28-PM.png"></p>
-                <a href="https://popcode.org/?snapshot=7d70d837-c312-42b9-99b0-ec9c59e630c7" target="blank_">Photo Gallery</a>
-                <p>This was one of the projects where we were adding images and such into websites. Here you are able to </p>
+                <a href="https://katherinepanora.github.io/Photo-Gallery--Katherine-Panora/" target="blank_">Photo Gallery</a>
+                <p>Here, we were adding images and such into an empty array. Users are only able to see the images that they input if it is a working and non-broken link. The title encourages users to add images of animals, but in all honesty, it can be any link that sources an image and it'll pop up and be shown to the user!</p>
             </div>
            </div>
            <div class="project3">
@@ -4213,8 +4211,8 @@ img {
             <button class="pbutton3">Open #3</button>
             <div class="project3open">
               <p><img src="https://i.ibb.co/b6g6F72/Screen-Shot-2023-01-17-at-12-21-16-PM.png"></p>
-              <a href="https://popcode.org/?snapshot=83b278e5-833f-4088-bbe5-3b6d8657206b" target="blank_">Character Quiz</a>
-              <p>This is one of the projects that I am most proud of as I was able to master if, else, and else of statements. It's something you'd call a miniature game, as what you input alters the outcome and the results are meant to reflect on the user.</p>
+              <a href="https://katherinepanora.github.io/Character-Quiz" target="blank_">Character Quiz</a>
+              <p>This was the project that I am most proud of, as I was able to master if, else, and else of statements. It's something I'd like to classify as a miniature game. Depending on what users input, it'll alter the outcome of what they classify as. In other words, the results are meant to reflect the user and make a silly, funny little connection.</p>
             </div>
            </div>
         </div>
@@ -4228,11 +4226,11 @@ img {
             <!--<br>-->
             <h2>Contact Me At: </h2>
             <p>Personal email - katherine.panora2005@gmail.com</p> 
-            <p>LinkedIn - </p>
+            <p>Phone Number - (917) 415-4744</p>
             <br>
             <h2>Find me on:</h2>
-            <p>Repl.it - </p>
-            <p>Github - </p>
+            <p>Repl.it - <a href="https://replit.com/@katherinepanora05" target="blank_">katherinepanora05</a></p>
+            <p>Github - <a href="https://github.com/katherinepanora" target="blank_">katherinepanora</a></p>
         </div>
 
       
@@ -4251,12 +4249,23 @@ $(".pbutton3").click(function () {
 });
 $(".project1,.project2,.project3").hide();
 $(".allProjs").click(function () {
+  $(".project1open,.project2open,.project3open").hide();
   $(".aboutMe,.contactInfo").hide();
+  $(".contactMe").hide();
   $(".project1,.project2,.project3").show();
 });
 $(".aboutMe,.contactInfo ").hide();
 $(".personalInfo").click(function () {
   $(".project1,.project2,.project3").hide();
+  $(".project1open,.project2open,.project3open").hide();
+  $(".contactMe").hide();
   $(".aboutMe,.contactInfo ").show();
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJoaWRlIiwiY2xpY2siLCJ0b2dnbGUiLCJzaG93Il0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLDJDQUFELENBQUQsQ0FBK0NDLElBQS9DO0FBRUFELENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsS0FBZixDQUFxQixZQUFXO0FBQzVCRixFQUFBQSxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CRyxNQUFuQjtBQUNILENBRkQ7QUFHQUgsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRSxLQUFmLENBQXFCLFlBQVc7QUFDNUJGLEVBQUFBLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJHLE1BQW5CO0FBQ0gsQ0FGRDtBQUdBSCxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVFLEtBQWYsQ0FBcUIsWUFBVztBQUM1QkYsRUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkcsTUFBbkI7QUFDSCxDQUZEO0FBSUFILENBQUMsQ0FBQywrQkFBRCxDQUFELENBQW1DQyxJQUFuQztBQUNBRCxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVFLEtBQWYsQ0FBcUIsWUFBVztBQUM1QkYsRUFBQUEsQ0FBQyxDQUFDLHVCQUFELENBQUQsQ0FBMkJDLElBQTNCO0FBQ0FELEVBQUFBLENBQUMsQ0FBQywrQkFBRCxDQUFELENBQW1DSSxJQUFuQztBQUNILENBSEQ7QUFLQUosQ0FBQyxDQUFDLHdCQUFELENBQUQsQ0FBNEJDLElBQTVCO0FBQ0FELENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJFLEtBQW5CLENBQXlCLFlBQVc7QUFDaENGLEVBQUFBLENBQUMsQ0FBQywrQkFBRCxDQUFELENBQW1DQyxJQUFuQztBQUNBRCxFQUFBQSxDQUFDLENBQUMsd0JBQUQsQ0FBRCxDQUE0QkksSUFBNUI7QUFDSCxDQUhEIiwic291cmNlc0NvbnRlbnQiOlsiJChcIi5wcm9qZWN0MW9wZW4sLnByb2plY3Qyb3BlbiwucHJvamVjdDNvcGVuXCIpLmhpZGUoKTtcblxuJChcIi5wYnV0dG9uMVwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnByb2plY3Qxb3BlblwiKS50b2dnbGUoKTtcbn0pO1xuJChcIi5wYnV0dG9uMlwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnByb2plY3Qyb3BlblwiKS50b2dnbGUoKTtcbn0pO1xuJChcIi5wYnV0dG9uM1wiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnByb2plY3Qzb3BlblwiKS50b2dnbGUoKTtcbn0pO1xuXG4kKFwiLnByb2plY3QxLC5wcm9qZWN0MiwucHJvamVjdDNcIikuaGlkZSgpO1xuJChcIi5hbGxQcm9qc1wiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLmFib3V0TWUsLmNvbnRhY3RJbmZvXCIpLmhpZGUoKTtcbiAgICAkKFwiLnByb2plY3QxLC5wcm9qZWN0MiwucHJvamVjdDNcIikuc2hvdygpO1xufSk7XG5cbiQoXCIuYWJvdXRNZSwuY29udGFjdEluZm8gXCIpLmhpZGUoKTtcbiQoXCIucGVyc29uYWxJbmZvXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIucHJvamVjdDEsLnByb2plY3QyLC5wcm9qZWN0M1wiKS5oaWRlKCk7XG4gICAgJChcIi5hYm91dE1lLC5jb250YWN0SW5mbyBcIikuc2hvdygpO1xufSk7Il19</script></body></html>
+$(".contactMe").hide();
+$(".contacts").click(function () {
+  $(".project1,.project2,.project3").hide();
+  $(".project1open,.project2open,.project3open").hide();
+  $(".aboutMe,.contactInfo ").hide();
+  $(".contactMe").show();
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJoaWRlIiwiY2xpY2siLCJ0b2dnbGUiLCJzaG93Il0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLDJDQUFELENBQUQsQ0FBK0NDLElBQS9DO0FBRUFELENBQUMsQ0FBQyxXQUFELENBQUQsQ0FBZUUsS0FBZixDQUFxQixZQUFXO0FBQzVCRixFQUFBQSxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CRyxNQUFuQjtBQUNILENBRkQ7QUFHQUgsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRSxLQUFmLENBQXFCLFlBQVc7QUFDNUJGLEVBQUFBLENBQUMsQ0FBQyxlQUFELENBQUQsQ0FBbUJHLE1BQW5CO0FBQ0gsQ0FGRDtBQUdBSCxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVFLEtBQWYsQ0FBcUIsWUFBVztBQUM1QkYsRUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkcsTUFBbkI7QUFDSCxDQUZEO0FBSUFILENBQUMsQ0FBQywrQkFBRCxDQUFELENBQW1DQyxJQUFuQztBQUNBRCxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVFLEtBQWYsQ0FBcUIsWUFBVztBQUM1QkYsRUFBQUEsQ0FBQyxDQUFDLDJDQUFELENBQUQsQ0FBK0NDLElBQS9DO0FBQ0FELEVBQUFBLENBQUMsQ0FBQyx1QkFBRCxDQUFELENBQTJCQyxJQUEzQjtBQUNBRCxFQUFBQSxDQUFDLENBQUMsWUFBRCxDQUFELENBQWdCQyxJQUFoQjtBQUNBRCxFQUFBQSxDQUFDLENBQUMsK0JBQUQsQ0FBRCxDQUFtQ0ksSUFBbkM7QUFDSCxDQUxEO0FBT0FKLENBQUMsQ0FBQyx3QkFBRCxDQUFELENBQTRCQyxJQUE1QjtBQUNBRCxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CRSxLQUFuQixDQUF5QixZQUFXO0FBQ2hDRixFQUFBQSxDQUFDLENBQUMsK0JBQUQsQ0FBRCxDQUFtQ0MsSUFBbkM7QUFDQUQsRUFBQUEsQ0FBQyxDQUFDLDJDQUFELENBQUQsQ0FBK0NDLElBQS9DO0FBQ0FELEVBQUFBLENBQUMsQ0FBQyxZQUFELENBQUQsQ0FBZ0JDLElBQWhCO0FBQ0FELEVBQUFBLENBQUMsQ0FBQyx3QkFBRCxDQUFELENBQTRCSSxJQUE1QjtBQUNILENBTEQ7QUFPQUosQ0FBQyxDQUFDLFlBQUQsQ0FBRCxDQUFnQkMsSUFBaEI7QUFDQUQsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlRSxLQUFmLENBQXFCLFlBQVc7QUFDNUJGLEVBQUFBLENBQUMsQ0FBQywrQkFBRCxDQUFELENBQW1DQyxJQUFuQztBQUNBRCxFQUFBQSxDQUFDLENBQUMsMkNBQUQsQ0FBRCxDQUErQ0MsSUFBL0M7QUFDQUQsRUFBQUEsQ0FBQyxDQUFDLHdCQUFELENBQUQsQ0FBNEJDLElBQTVCO0FBQ0FELEVBQUFBLENBQUMsQ0FBQyxZQUFELENBQUQsQ0FBZ0JJLElBQWhCO0FBQ0gsQ0FMRCIsInNvdXJjZXNDb250ZW50IjpbIiQoXCIucHJvamVjdDFvcGVuLC5wcm9qZWN0Mm9wZW4sLnByb2plY3Qzb3BlblwiKS5oaWRlKCk7XG5cbiQoXCIucGJ1dHRvbjFcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wcm9qZWN0MW9wZW5cIikudG9nZ2xlKCk7XG59KTtcbiQoXCIucGJ1dHRvbjJcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wcm9qZWN0Mm9wZW5cIikudG9nZ2xlKCk7XG59KTtcbiQoXCIucGJ1dHRvbjNcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wcm9qZWN0M29wZW5cIikudG9nZ2xlKCk7XG59KTtcblxuJChcIi5wcm9qZWN0MSwucHJvamVjdDIsLnByb2plY3QzXCIpLmhpZGUoKTtcbiQoXCIuYWxsUHJvanNcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wcm9qZWN0MW9wZW4sLnByb2plY3Qyb3BlbiwucHJvamVjdDNvcGVuXCIpLmhpZGUoKTtcbiAgICAkKFwiLmFib3V0TWUsLmNvbnRhY3RJbmZvXCIpLmhpZGUoKTtcbiAgICAkKFwiLmNvbnRhY3RNZVwiKS5oaWRlKCk7XG4gICAgJChcIi5wcm9qZWN0MSwucHJvamVjdDIsLnByb2plY3QzXCIpLnNob3coKTtcbn0pO1xuXG4kKFwiLmFib3V0TWUsLmNvbnRhY3RJbmZvIFwiKS5oaWRlKCk7XG4kKFwiLnBlcnNvbmFsSW5mb1wiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnByb2plY3QxLC5wcm9qZWN0MiwucHJvamVjdDNcIikuaGlkZSgpO1xuICAgICQoXCIucHJvamVjdDFvcGVuLC5wcm9qZWN0Mm9wZW4sLnByb2plY3Qzb3BlblwiKS5oaWRlKCk7XG4gICAgJChcIi5jb250YWN0TWVcIikuaGlkZSgpO1xuICAgICQoXCIuYWJvdXRNZSwuY29udGFjdEluZm8gXCIpLnNob3coKTtcbn0pO1xuXG4kKFwiLmNvbnRhY3RNZVwiKS5oaWRlKCk7XG4kKFwiLmNvbnRhY3RzXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIucHJvamVjdDEsLnByb2plY3QyLC5wcm9qZWN0M1wiKS5oaWRlKCk7XG4gICAgJChcIi5wcm9qZWN0MW9wZW4sLnByb2plY3Qyb3BlbiwucHJvamVjdDNvcGVuXCIpLmhpZGUoKTtcbiAgICAkKFwiLmFib3V0TWUsLmNvbnRhY3RJbmZvIFwiKS5oaWRlKCk7XG4gICAgJChcIi5jb250YWN0TWVcIikuc2hvdygpO1xufSk7Il19</script></body></html>
