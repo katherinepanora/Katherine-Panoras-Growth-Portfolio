@@ -26,12 +26,14 @@ img {
 }
 
 .contactMe {
+    display:inline-block;
+    text-align:center;
     margin:20px;
     padding:20px;
 }
 
 .project1 , .project2 , .project3 {
-	display:inline-block;
+    display:inline-block;
     text-align:center;
     margin: 20px;
     padding: 20px;
