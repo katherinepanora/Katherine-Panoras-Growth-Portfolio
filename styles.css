@@ -32,7 +32,7 @@ img {
     padding:20px;
 }
 
-.project1 , .project2 , .project3 {
+.project1 , .project2 , .project3 , .project4 {
     display:inline-block;
     text-align:center;
     margin: 20px;
@@ -93,7 +93,7 @@ img {
     transform: translateY(4px);
 }
 
-.pbutton1, .pbutton2, .pbutton3 {
+.pbutton1, .pbutton2, .pbutton3 , .pbutton4 {
   position: relative;
   background-color: #CF9FFF;
   border: none;
@@ -108,7 +108,7 @@ img {
   cursor: pointer;
 }
 
-.pbutton1:after, .pbutton2:after, .pbutton3:after {
+.pbutton1:after, .pbutton2:after, .pbutton3:after , .pbutton4:after {
   content: "";
   background: #f1f1f1;
   display: block;
@@ -121,7 +121,7 @@ img {
   transition: all 0.8s;
 }
 
-.pbutton1:active:after, .pbutton2:active:after, .pbutton3:active:after {
+.pbutton1:active:after, .pbutton2:active:after, .pbutton3:active:after , .pbutton4:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
