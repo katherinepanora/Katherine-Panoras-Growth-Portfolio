@@ -20,7 +20,10 @@ p {
     padding: 20px;
 }
 
-img {
+.blackgooseIMG{
+	border:none;
+}
+.project1img, .project2img, .project3img {
     width:200px;
     border:solid black 1px;
 }
